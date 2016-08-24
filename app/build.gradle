@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "cc.yamyam"
+        minSdkVersion 12
+        targetSdkVersion 22
+        versionCode 2
+        versionName "0.2.7-${releaseTime()}"
+    }
+
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+        release {
+            //storeFile file("../yourapp.keystore")
+            //storePassword "your password"
+            //keyAlias "your alias"
+            //keyPassword "your password"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "yamyam-${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'io.nlopez.smartlocation:library:3.0.11'
+
+    // compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    // compile 'com.google.android.gms:play-services:7.5.0'
+    // compile 'commons-io:commons-io:+'
+     //compile 'org.apache.httpcomponents:httpmime:4.3.1'
+
+     //compile 'org.apache.httpcomponents:httpcore:4.3'
+
+    // compile 'org.apache.httpcomponents:httpclient:4.3.1'
+}

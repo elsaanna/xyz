@@ -1,0 +1,90 @@
+<resources>
+
+    <string name="app_name">YamYam!</string>
+    <string name="hello_world">Hello world! Here I am : </string>
+    <string name="action_settings">Settings</string>
+    <string name="action_camera">Take Photo</string>
+    <string name="action_publish">Publish!</string>
+    <string name="action_exit">Quit</string>
+    <string name="action_register">Register</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_whereami">WhereAmI</string>
+    <string name="latitude_label">Latitude: </string>
+    <string name="longitude_label">Longitude: </string>
+    <string name="whereami">Where Am I ?</string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main_activity_test">MainActivityTest</string>
+    <string name="label_note_spinner">Bewertungen:</string>
+    <string name="label_places_spinner">Laden:</string>
+    <string name="select">Bitte auswählen</string>
+    <string name="register_label_nickname">Nickname:</string>
+    <string name="register_send">Sign up</string>
+
+     <string name="title_activity_register">Sign up</string>
+    <string name="title_activity_locator">Locator</string>
+
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="btn_remove">Remove</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_remove_file">Empty Data</string>
+    <string-array name="note_array">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+    </string-array>
+
+    <string-array name="radius_array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+
+    <string name="drawer_open">Menu open</string>
+    <string name="drawer_close">Menu close</string>
+    <!--menu begin-->
+    <string name="menu_about">About</string>
+    <string name="menu_gallery">My Gallery</string>
+    <string name="menu_places">Around me</string>
+    <string name="menu_myrest">My Restaurants</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_takefoto">Take photo!</string>
+    <string name="menu_locator">Locator</string>
+
+    <!--menu end-->
+
+    <!--image-->
+    <string name="clear_cache_menu">Clear Cache</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <!--end image-->
+
+
+    <!--places -->
+     <string name="placesAroundMe">Places around me. Comming soon!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- end places -->
+
+</resources>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_camera" android:title="@string/action_camera"
+        android:orderInCategory="1" app:showAsAction="always" android:enabled="false" />
+    <item android:id="@+id/action_publish" android:title="@string/action_publish"
+        android:orderInCategory="1" app:showAsAction="always" android:enabled="false"/>
+
+    <item android:id="@+id/action_remove" android:title="@string/action_remove"
+        android:orderInCategory="20" app:showAsAction="never" />
+    <item android:id="@+id/action_remove_file" android:title="@string/action_remove_file"
+        android:orderInCategory="20" app:showAsAction="never" />
+</menu>

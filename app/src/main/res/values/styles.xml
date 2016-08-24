@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="YamyamTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="logo">@drawable/ic_tasty</item>
+        <item name="displayOptions">useLogo|showHome</item>
+    </style>
+
+
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
+    </style>
+
+    <style name="AppThemeDark.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+</resources>
